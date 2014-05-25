@@ -1,0 +1,348 @@
+.main {
+	background: #000;
+	background-image: url("../assets/app-bg2.png");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #a5a5a5;
+	/*color: #ddd;*/
+	font-size: 16px;
+	font-family: "Mochi Light";
+}
+
+.blur-panel-content {
+	-webkit-filter: blur(4px);
+	/*opacity: .5;*/
+}
+.blur-panel {
+	opacity: .5 !important;
+	background-color: rgba(10,10,10,0) !important;
+}
+
+.mochi-panels > * {
+	/*-webkit-box-shadow: inset 0 0 169px rgba(0, 0, 0, 0.3);*/
+	/*box-shadow: inset 0 0 169px rgba(0, 0, 0, 0.3);*/
+	/*background: rgba(10,10,10,.4);*/
+
+}
+.mochi-base-panel > *:first-child {
+	/*border-top-left-radius: 45px;*/
+	background: none !important;
+	border-left: none;
+}
+
+/*.panel-container {
+	padding: 0px 65px 0 30px;
+	width: 70%;
+	min-width: 320px;
+	opacity: 1;
+	background-color: rgba(10,10,10,.5);
+	-webkit-transition: background-color .2s;
+}*/
+
+.panel-container.menu {
+	max-width: 400px;
+}
+
+.panel-content {
+	/*padding: 0 15px 0 32px;*/
+	-webkit-filter: blur(none);
+	-webkit-transition: -webkit-filter .2s;
+}
+
+.tab-header {
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+.label-units {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+	.panel-container {
+		padding: 0px 20px 0 20px;
+		/*height: 100%;*/
+		width: 95%;
+		min-width: 320px;
+		background-color: rgba(10,10,10,.5);
+		opacity: 1;
+		-webkit-transition: opacity .5s;
+	}
+	.blur-panel-content {
+		-webkit-filter: blur(4px);
+		/*opacity: .5;*/
+	}
+	.blur-panel {
+		opacity: 0 !important;
+	}
+}
+@media (min-width: 500px) {
+	.panel-container {
+		padding: 0px 65px 0 30px;
+		/*height: 100%;*/
+		width: 70%;
+		min-width: 320px;
+		opacity: 1;
+		background-color: rgba(10,10,10,.5);
+		-webkit-transition: background-color .2s;
+	}
+	.blur-panel-content {
+		-webkit-filter: blur(4px);
+		/*opacity: .5;*/
+	}
+	.blur-panel {
+		opacity: .5 !important;
+		background-color: rgba(10,10,10,0) !important;
+	}
+}
+
+/* Help */
+
+.help-box {
+	font-size: 15px;
+	padding: 5px 5px 5px 5px;
+	background: #3a3a3a url("../assets/button-x.png") 99% 5px no-repeat;
+	background-size: 15px;
+	border-radius: 5px;
+	display: none;
+}
+.help-box .title {
+	color: #fff;
+	margin-bottom: 3px;
+}
+
+/* App header */
+
+.header {
+	padding-top: 5px;
+	/*background: rgba(0,0,0,.4);*/
+	/*background: hsla(0,0%,100%,.8);*/
+	/*-webkit-filter: contrast(30%) brightness(160%) blur(12px);*/
+	/*-webkit-filter: blur(5px);*/
+}
+.header .icon {
+	height: 64px;
+	width: 64px;
+	margin-right: 10px;
+	background:	url("../assets/icons/optIconsColor/icon64/cloudy.png") center center no-repeat;
+	background-size: contain;
+}
+.header .temp {
+	font-size: 48px;
+	margin-right: 10px;
+	padding-top: 3px;
+	color: #fff;
+}
+
+.header .status-box {
+	padding: 10px 10px 0 0;
+	font-size: 16px;
+	text-align: right;
+}
+.header .status-box .line1,
+.header .status-box .line2 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.header .status-box .line1 {
+	margin-bottom: 5px;
+}
+
+/* Tab bar */
+
+.tab-bar {
+	color: #fff;
+	height: 32px;
+}
+.tab-bar .tab {
+	width: 33%;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.white-bar {
+    margin-top: 3px;
+    width: 33.4%;
+    height: 1px;
+    background: white;
+    -webkit-transition: margin-left .15s;
+    transition: margin-left .15s;
+}
+
+/* Menu tab */
+
+.location-row {
+	/*width: 230px;*/
+	padding: 15px 0;
+	border-bottom: 1px solid rgba(100,100,100,.35);
+}
+.location-row.active {
+	color: #fff;
+}
+
+.settings-row {
+	/*width: 230px;*/
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(100,100,100,.35);
+}
+.settings-row .label {
+	font-size: 16px;
+	padding: 7px 0;
+}
+
+.custom-picker {
+	width: 100px;
+	color: #fff;
+	font-size: 16px;
+	text-align: right;
+	margin: 0;
+	padding: 7px 15px 7px 15px !important;
+	
+	background: url("../assets/picker-arrow.png") bottom right no-repeat;
+	background-size: 10px;
+	box-shadow: none;
+
+	border-radius: 2px;
+	border: none !important;
+}
+
+.settings-button {
+	width: 100%;
+	margin: 10px 0;
+}
+.settings-button > .mochi-button-base {
+	color: #bbb;
+}
+
+/* Currently tab */
+
+.alert {
+	background: #800;
+	color: #ccc;
+	padding: 5px;
+	width: 100%;
+	margin-bottom: 3px;
+}
+
+.c-title {
+	font-size: 20px;
+	font-weight: normal;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.c-desc {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.system-warning {
+	color: #f55;
+	margin: 10px 0;
+}
+
+.currently-col {
+	width: 50%;
+}
+
+.currently-element {
+	margin: 12px 0 12px 0;
+}
+.currently-element.left {
+	text-align: left;
+}
+.currently-element.right {
+	text-align: right;
+}
+
+.currently-element .icon {
+	background-image: url("../assets/icons/optIconsWhite/icon24/cloudy.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 24px;
+	width: 24px;
+}
+.currently-element .desc {
+	font-size: 16px;
+	padding-top: 2px;
+	margin: 0 5px 0 5px;
+}
+
+.powered-by {
+	width: 100%;
+	text-align: center;
+	padding: 10px 0 20px 0;
+}
+
+/* Hourly tab */
+
+.hour-box {
+	font-size: 16px;
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(100,100,100,.35);
+}
+.hour-box .hour {
+	color: #fff;
+}
+.hour-box .icon {
+	height: 38px;
+	width: 38px;
+	background-image: url("../assets/icons/optIconsWhite/icon64/partly-cloudy-day.png");
+	margin-right: 10px;
+	background-size: contain;
+}
+.hour-box .detail-box2 {
+	width: 65px;
+}
+.hour-box .forecast {
+
+}
+.hour-box .precip {
+	text-align: right;
+	padding-right: 24px;
+	background-image: url("../assets/icons/optIconsWhite/icon24/rain.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.hour-box .cloud {
+	text-align: right;
+	padding-right: 24px;
+	background-image: url("../assets/icons/optIconsWhite/icon24/cloudy.png");
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Daily tab */
+
+.day-box {
+	font-size: 16px;
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(100,100,100,.35);
+}
+.day-box .icon {
+	height: 38px;
+	width: 38px;
+	background-image: url("../assets/icons/optIconsWhite/icon32/partly-cloudy-day.png");
+	background-size: contain;
+}
+.day-box .high,
+.day-box .low {
+	width: 35px;
+	text-align: right;
+	margin: 0 10px 0 5px;
+}
+.day-box .high {
+	color: #faa;
+}
+.day-box .low {
+	color: #aaf;
+}
+.day-box .date {
+	color: #fff;
+}

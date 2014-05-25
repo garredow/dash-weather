@@ -1,0 +1,10 @@
+{
+  "id": "com.choorp.dash-weather-plus",
+  "version": "1.6.2",
+  "vendor": "Garrett Downs",
+  "type": "web",
+  "main": "index.html",
+  "title": "Dash Weather+",
+  "icon": "icon.png",
+  "uiRevision": "2"
+}

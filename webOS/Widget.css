@@ -1,0 +1,107 @@
+/* webOS widget styles */
+
+.main {
+	background: #000 url("assets/widget-bg.png") center center;
+	background-size: cover;
+	color: #a5a5a5;
+	font-size: 16px;
+}
+
+@media (max-height: 80px) {
+	.main {
+		background: #000 url("assets/widget-bg-phone.png") center center;
+	}
+}
+
+.label-units {
+	font-size: 13px;
+}
+
+/* Tap Scroller */
+
+.tap-scroller {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	z-index: 100;
+	height: 218px;
+	width: 100%;
+}
+
+.tap-scroller .up {
+	background: none;
+	height: 50%;
+	width: 100%;
+}
+
+.tap-scroller .down {
+	background: none;
+	height: 50%;
+	width: 100%;
+}
+
+/* App header */
+
+.header {
+	padding-top: 0px;
+	height: 52px;
+}
+.header .icon {
+	height: 46px;
+	width: 46px;
+	background:	url("assets/icons/optIconsColor/icon64/cloudy.png") center center no-repeat;
+	background-size: contain;
+	margin-top: 5px;
+}
+.header .temp {
+	font-size: 36px;
+	padding-top: 2px;
+}
+
+.header .status-box {
+	padding: 5px 10px 0 0;
+	font-size: 15px;
+	text-align: right;
+}
+.header .status-box .line1 {
+	margin-bottom: 3px;
+}
+
+.header .daily-box {
+	padding: 5px 5px 0 0;
+	font-size: 15px;
+	text-align: left;
+}
+.header .daily-box .line1 {
+	margin-bottom: 3px;
+}
+
+/* Currently tab */
+
+.c-title {
+	font-size: 17px;
+}
+
+.c-desc {
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+.currently-element .desc {
+	font-size: 15px;
+	padding-top: 3px;
+}
+
+/* Hourly tab */
+
+.hour-box {
+	font-size: 15px;
+	padding: 5px 0;
+}
+
+/* Daily tab */
+
+.day-box {
+	font-size: 15px;
+	padding: 5px 0;
+}

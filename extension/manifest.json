@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	
+	"name": "Dash Weather (Beta)",
+	"author": "Garrett Downs",
+	"description": "Beautiful weather app build entirely with Enyo2.",
+	"version": "2.0.2",
+	"icons": {
+		"256": "icon-256.png",
+		"128": "icon-128.png",
+		"64": "icon-64.png",
+		"32": "icon-32.png",
+		"48": "icon-48.png",
+		"24": "icon-24.png"
+	},
+	"app": {
+		"background": {
+			"scripts": ["background.js"]
+	    }
+	},
+	"permissions": [
+		"https://api.forecast.io/*",
+		"http://maps.googleapis.com/*",
+		"geolocation",
+		"storage"
+	]
+}

@@ -1,0 +1,81 @@
+.main {
+	color: #444;
+	background: #eaeaea;
+}
+
+/* Help */
+
+.help-box {
+	background: #ccc url("../assets/button-x.png") 99% 5px no-repeat;
+	background-size: 15px;
+}
+.help-box .title {
+	color: #222;
+	font-weight: bold;
+}
+
+/* App header */
+
+.header .temp {
+	color: #222;
+}
+
+/* Tab bar */
+
+.tab-bar {
+	color: #222;
+}
+
+.white-bar {
+    background: #222;
+}
+
+/* Menu tab */
+
+.settings-row {
+	border-bottom: 1px solid #cecece;
+}
+
+.custom-picker {
+	color: #222;
+	/*border: none;*/
+}
+
+.settings-button {
+	background-color: #eaeaea !important;
+	color: #000 !important;
+}
+
+/* Currently tab */
+
+.c-title {
+	color: #222;
+}
+
+/* Hourly tab */
+
+.hour-box {
+	border-bottom: 1px solid #cecece;
+}
+
+.hour-box .hour {
+	color: #222;
+	font-weight: bold;
+}
+
+/* Daily tab */
+
+.day-box {
+	border-bottom: 1px solid #cecece;
+}
+
+.day-box .high {
+	color: #722;
+}
+.day-box .low {
+	color: #227;
+}
+.day-box .date {
+	color: #222;
+	font-weight: bold;
+}

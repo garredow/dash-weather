@@ -1,0 +1,18 @@
+{
+  "name": "Dash Weather+",
+  "description": "Super awesome weather app!",
+  "launch_path": "debug.html",
+  "icons": {
+    "128": "/assets/icon-128.png"
+  },
+  "developer": {
+    "name": "Garrett Downs",
+    "url": "http://www.choorp.org"
+  },
+  "default_locale": "en",
+  "permissions": {
+    "geolocation": {
+      "description": "Required to find your local weather forecast."
+    }
+  }
+}
