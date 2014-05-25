@@ -7,3 +7,6 @@
 [submodule "lib/onyx"]
 	path = lib/onyx
 	url = https://github.com/enyojs/onyx.git
+[submodule "lib/mochi"]
+	path = lib/mochi
+	url = https://github.com/enyojs/mochi.git
